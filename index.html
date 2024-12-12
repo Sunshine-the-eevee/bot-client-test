@@ -34,7 +34,7 @@
     			window.__OVERLAY__ = window.overlay != null
 
    			 // hummus environment
-    			// window.CLIENT_ENV = {api:"//hummus.sys42.net/api",api_1:"hummus.sys42.net",cdn:"hcdn.sys42.net",dis:"notexist",support:"https://notexist",blog:"blog.discordapp.com",domain:"hummus.sys42.net",env:"production",twitter:"?1",status:"discordstatus.com",crash:"notreal",invite_url:"hummus.sys42.net/invite",stripe_key:"pk_test_51GsU4DAZBpiR6vL6iGHN5kTL3Lbr35S9996qKiktolXgEMWy1MvmSec2FHeu4CKIK0u0BD4xn3K4xAwAryr3kIBK00o8pupGCw",recaptcha_key:"6Leqz9UUAAAAAP5qSNIOiohsP5FFX5a5Ck7Tqp0C",time:1734031717445}
+    			 window.CLIENT_ENV = {api:"//hummus.sys42.net/api",api_1:"hummus.sys42.net",cdn:"hcdn.sys42.net",dis:"notexist",support:"https://notexist",blog:"blog.discordapp.com",domain:"hummus.sys42.net",env:"production",twitter:"?1",status:"discordstatus.com",crash:"notreal",invite_url:"hummus.sys42.net/invite",stripe_key:"pk_test_51GsU4DAZBpiR6vL6iGHN5kTL3Lbr35S9996qKiktolXgEMWy1MvmSec2FHeu4CKIK0u0BD4xn3K4xAwAryr3kIBK00o8pupGCw",recaptcha_key:"6Leqz9UUAAAAAP5qSNIOiohsP5FFX5a5Ck7Tqp0C",time:1734031717445}
 
    			 // Fast Connect
     			!function(){if(null!=window.WebSocket){var n=function(n){try{var o=localStorage.getItem(n);return null==o?null:JSON.parse(o)}catch(n){return null}},o=n("token"),e=n("gatewayURL");if(o&&e){var t=null!=window.__require?"etf":"json",l=e+"/?encoding="+t+"&v=6";console.log("%c[FAST CONNECT]","font-weight: bold; color: purple;",l+", encoding: "+t+", version: 6");var r=new WebSocket(l);r.binaryType="arraybuffer";var a=Date.now(),c={open:!1,gateway:l,messages:[]};r.onopen=function(){console.log("%c[FAST CONNECT]","font-weight: bold; color: purple;","connected in "+(Date.now()-a)+"ms"),c.open=!0},r.onclose=r.onerror=function(){window._ws=null},r.onmessage=function(n){c.messages.push(n)},window._ws={ws:r,state:c}}}}();
@@ -48,7 +48,7 @@
 		<script>
 			window.GLOBAL_ENV = {
 				API_ENDPOINT: "//hummus.sys42.net/api",
-				API_1: "hummus.sys42.net"
+				API_1: "hummus.sys42.net",
 				WEBAPP_ENDPOINT: "//hummus.sys42.net",
 				CDN_HOST: "hcdn.sys42.net",
 				ASSET_ENDPOINT: "https://hummus.sys42.net",
@@ -63,7 +63,9 @@
 				NETWORKING_ENDPOINT: "",
 				PROJECT_ENV: "production",
 				REMOTE_AUTH_ENDPOINT: "//hummus-gateway.sys42.net",
-				SENTRY_TAGS: { buildId: "1de234a", buildType: "normal" },
+				GatewayURL: "//hummus-gateway.sys42.net",
+				
+				// SENTRY_TAGS: { buildId: "1de234a", buildType: "normal" },
 				MIGRATION_SOURCE_ORIGIN: "https://hummus.ziad87.net",
 				MIGRATION_DESTINATION_ORIGIN: "https://hummus.sys42.net",
 				HTML_TIMESTAMP: Date.now(),
