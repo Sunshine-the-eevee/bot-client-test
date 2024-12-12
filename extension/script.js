@@ -14,20 +14,20 @@ if (chr) extraInfoSpecRequest.push("extraHeaders") && extraInfoSpecResponse.push
 
 chrome.webRequest.onBeforeSendHeaders.addListener(
 	function (details) {
-		if (chr) if (details.initiator !== "https://botclient.tk") return;
-		if (fir) if (!details.originUrl.includes("botclient.tk")) return;
+		if (chr) if (details.initiator !== "https://sunshine-the-eevee.github.io/bot-client-test") return;
+		if (fir) if (!details.originUrl.includes("sunshine-the-eevee.github.io/bot-client-test")) return;
 
 		let header = details.requestHeaders.find((e) => e.name.toLowerCase() === "origin");
-		if (header) header.value = "https://discord.com";
-		else details.requestHeaders.push({ name: "Origin", value: "https://discord.com" });
+		if (header) header.value = "https://hummus.sys42.net";
+		else details.requestHeaders.push({ name: "Origin", value: "https://hummus.sys42.net" });
 		if (
 			[
-				"https://discord.com/api/v9/users/@me/library",
-				"https://discord.com/api/v9/users/@me/guilds/premium/subscriptions",
-				"https://discord.com/api/v9/science",
+				"https://hummus.sys42.net/api/v6/users/@me/",
+				"https://hummus.sys42.net/api/v6/users/@me/relationships",
+				"https://hummus.sys42.net/api/v6/auth/login",
 			].includes(details.url) ||
-			details.url.includes("https://discord.com/api/v9/users/@me/billing/trials/") ||
-			details.url.includes("https://discord.com/api/v9/users/@me/applications/")
+			details.url.includes("https://hummus.sys42.net/api/v6/") ||
+			details.url.includes("https://hummus.sys42.net/api/v6/users/@me/)
 		) {
 			return { cancel: true };
 		}
@@ -43,8 +43,8 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 
 chrome.webRequest.onHeadersReceived.addListener(
 	(details) => {
-		if (chr) if (details.initiator !== "https://botclient.tk") return;
-		if (fir) if (!details.originUrl.includes("botclient.tk")) return;
+		if (chr) if (details.initiator !== "https://sunshine-the-eevee.github.io/bot-client-test/") return;
+		if (fir) if (!details.originUrl.includes("sunshine-the-eevee.github.io/bot-client-test/")) return;
 
 		let header = details.responseHeaders.find((e) => e.name.toLowerCase() === "access-control-allow-origin");
 		if (header) header.value = "*";
