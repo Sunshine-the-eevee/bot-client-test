@@ -34,7 +34,7 @@
     			window.__OVERLAY__ = window.overlay != null
 
    			 // hummus environment
-    			window.CLIENT_ENV = {api:"//hummus.sys42.net/api",api_1:"hummus.sys42.net",cdn:"hcdn.sys42.net",dis:"notexist",support:"https://notexist",blog:"blog.discordapp.com",domain:"hummus.sys42.net",env:"production",twitter:"?1",status:"discordstatus.com",crash:"notreal",invite_url:"hummus.sys42.net/invite",stripe_key:"pk_test_51GsU4DAZBpiR6vL6iGHN5kTL3Lbr35S9996qKiktolXgEMWy1MvmSec2FHeu4CKIK0u0BD4xn3K4xAwAryr3kIBK00o8pupGCw",recaptcha_key:"6Leqz9UUAAAAAP5qSNIOiohsP5FFX5a5Ck7Tqp0C",time:1734031717445}
+    			// window.CLIENT_ENV = {api:"//hummus.sys42.net/api",api_1:"hummus.sys42.net",cdn:"hcdn.sys42.net",dis:"notexist",support:"https://notexist",blog:"blog.discordapp.com",domain:"hummus.sys42.net",env:"production",twitter:"?1",status:"discordstatus.com",crash:"notreal",invite_url:"hummus.sys42.net/invite",stripe_key:"pk_test_51GsU4DAZBpiR6vL6iGHN5kTL3Lbr35S9996qKiktolXgEMWy1MvmSec2FHeu4CKIK0u0BD4xn3K4xAwAryr3kIBK00o8pupGCw",recaptcha_key:"6Leqz9UUAAAAAP5qSNIOiohsP5FFX5a5Ck7Tqp0C",time:1734031717445}
 
    			 // Fast Connect
     			!function(){if(null!=window.WebSocket){var n=function(n){try{var o=localStorage.getItem(n);return null==o?null:JSON.parse(o)}catch(n){return null}},o=n("token"),e=n("gatewayURL");if(o&&e){var t=null!=window.__require?"etf":"json",l=e+"/?encoding="+t+"&v=6";console.log("%c[FAST CONNECT]","font-weight: bold; color: purple;",l+", encoding: "+t+", version: 6");var r=new WebSocket(l);r.binaryType="arraybuffer";var a=Date.now(),c={open:!1,gateway:l,messages:[]};r.onopen=function(){console.log("%c[FAST CONNECT]","font-weight: bold; color: purple;","connected in "+(Date.now()-a)+"ms"),c.open=!0},r.onclose=r.onerror=function(){window._ws=null},r.onmessage=function(n){c.messages.push(n)},window._ws={ws:r,state:c}}}}();
@@ -72,14 +72,14 @@
 		</script>
 		<script>
 			window.assets = [
-				"/assets/e1180c171e5a54377584.js",
-				"/assets/07ca8d15cc9ad4ffc0f6.js",
-				"/assets/c05bdc0c5c3c90e28c77.js",
-				"/assets/7288c77130c62ff8aa82.js",
+				"https://hummus.sys42.net/assets/e1180c171e5a54377584.js",
+				"https://hummus.sys42.net/assets/07ca8d15cc9ad4ffc0f6.js",
+				"https://hummus.sys42.net/assets/c05bdc0c5c3c90e28c77.js",
+				"https://hummus.sys42.net/assets/7288c77130c62ff8aa82.js",
 			];
 		</script>
-		<script src="/assets/3f86729896ed9c76b98a.js"></script>
- 		<script src="/assets/8c3ff237e4512102354c.js"></script>
+		<script src="https://hummus.sys42.net/assets/3f86729896ed9c76b98a.js"></script>
+ 		<script src="https://hummus.sys42.net/assets/8c3ff237e4512102354c.js"></script>
 		<script>
 			window.unavailableGuilds = [];
 
