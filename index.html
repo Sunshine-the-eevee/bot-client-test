@@ -7,16 +7,16 @@
 
 		<!-- section:seometa -->
 		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Discord Bot Client" />
-		<meta property="og:title" content="Discord Bot Client - login into your discord bot with a token" />
-		<meta property="og:description" content="Discord Bot Client - login into your discord bot with a token" />
-		<meta property="og:image" content="https://discord.com/assets/ee7c382d9257652a88c8f7b7f22a994d.png" />
+		<meta property="og:site_name" content="Hummus Bot Client" />
+		<meta property="og:title" content="Hummus Bot Client - login into your hummus bot with a token" />
+		<meta property="og:description" content="Hummus Bot Client - login into your hummus bot with a token" />
+		<meta property="og:image" content="https://hummus.sys42.net/assets/ee7c382d9257652a88c8f7b7f22a994d.png" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="@flam3rboy" />
 		<meta name="twitter:creator" content="@flam3rboy" />
 		<!-- endsection -->
-		<link rel="stylesheet" href="https://discord.com/assets/0.2d737cc92c807c265e1f.css" />
-		<link rel="icon" href="https://discord.com/assets/07dca80a102d4149e9736d4b162cff6f.ico" />
+		<link rel="stylesheet" href="https://hummus.sys42.net/assets/0.2d737cc92c807c265e1f.css" />
+		<link rel="icon" href="https://hummus.sys42.net/assets/07dca80a102d4149e9736d4b162cff6f.ico" />
 		<!-- section:title -->
 		<title>Discord Bot Client</title>
 		<style>
@@ -37,24 +37,24 @@
 		</script>
 		<script>
 			window.GLOBAL_ENV = {
-				API_ENDPOINT: "//discord.com/api",
-				WEBAPP_ENDPOINT: "//discord.com",
-				CDN_HOST: "cdn.discordapp.com",
-				ASSET_ENDPOINT: "https://discord.com",
-				WIDGET_ENDPOINT: "//discord.com/widget",
-				INVITE_HOST: "discord.gg",
-				GUILD_TEMPLATE_HOST: "discord.new",
-				GIFT_CODE_HOST: "discord.gift",
-				RELEASE_CHANNEL: "canary",
-				MARKETING_ENDPOINT: "//discord.com",
+				API_ENDPOINT: "//hummus.sys42.net/api",
+				WEBAPP_ENDPOINT: "//hummus.sys42.net",
+				CDN_HOST: "hcdn.sys42.net",
+				ASSET_ENDPOINT: "https://hummus.sys42.net",
+				WIDGET_ENDPOINT: "//hummus.sys42.net/widget",
+				INVITE_HOST: "hummus.sys42.net",
+				GUILD_TEMPLATE_HOST: "",
+				GIFT_CODE_HOST: "",
+				RELEASE_CHANNEL: "production",
+				MARKETING_ENDPOINT: "//hummus.sys42.net",
 				BRAINTREE_KEY: "production_5st77rrc_49pp2rp4phym7387",
 				STRIPE_KEY: "pk_live_CUQtlpQUF0vufWpnpUmQvcdi",
-				NETWORKING_ENDPOINT: "//router.discordapp.net",
+				NETWORKING_ENDPOINT: "",
 				PROJECT_ENV: "production",
-				REMOTE_AUTH_ENDPOINT: "//remote-auth-gateway.discord.gg",
+				REMOTE_AUTH_ENDPOINT: "//hummus-gateway.sys42.net",
 				SENTRY_TAGS: { buildId: "1de234a", buildType: "normal" },
-				MIGRATION_SOURCE_ORIGIN: "https://discordapp.com",
-				MIGRATION_DESTINATION_ORIGIN: "https://discord.com",
+				MIGRATION_SOURCE_ORIGIN: "https://hummus.ziad87.net",
+				MIGRATION_DESTINATION_ORIGIN: "https://hummus.sys42.net",
 				HTML_TIMESTAMP: Date.now(),
 				ALGOLIA_KEY: "aca0d7082e4e63af5ba5917d5e96bed0",
 			};
@@ -196,7 +196,7 @@
 
 									window.localStorage.setItem("token", '"Bot '+r+'"' );
 									console.log("handle login", localStorage.getItem("token"))
-									window.location.replace("/app");
+									window.location.replace("/channels/@me");
 									e.preventDefault();
 									return;
 								}`
@@ -724,7 +724,7 @@
 									}), void 0, y(S, {
 										type:E.JOIN,
 										disabled:e.submitting,
-										onClick: ()=> window.open("https://discord.com/oauth2/authorize?client_id="+localStorage.getItem("user_id_cache").slice(1,-1)+"&permissions=8&scope=bot")
+										onClick: ()=> window.open("https://hummus.sys42.net/oauth2/authorize?client_id="+localStorage.getItem("user_id_cache").slice(1,-1)+"&permissions=8&scope=bot")
 									}))))
 									`
 								);
